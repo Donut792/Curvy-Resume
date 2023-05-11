@@ -41,8 +41,8 @@
             background: #dd3f31;
         }
 
-        .pink {
-            background: #ff0066;
+        .orange {
+            background: #cd5f5f;
         }
 
         .dark {
@@ -104,7 +104,7 @@
             position: relative;
             display: block;
             width: calc(131% + 1.3px);
-            height: 380px;
+            height: 100px;
         }
 
         .wave .shape-fill {
@@ -142,12 +142,18 @@
 <body>
 
     <section class="blue">
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
         <h1>Let me tell you something about me</h1>
         <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate iusto officia rem necessitatibus!
             Eveniet ex fugit, a tempore placeat quas accusamus voluptas, quia similique soluta modi quod, eaque deserunt
             saepe.
         </p>
+        
         <div class="curve"></div>
     </section>
     <section>
@@ -167,17 +173,45 @@
         <p>Sit, totam exercitationem? Possimus fuga accusamus repudiandae pariatur ipsa, illum iusto consequatur ipsam
             magni earum quas soluta in nihil, sint sit esse maiores inventore reiciendis animi ratione amet aspernatur
             libero!</p>
-        <div class="wave">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
+        
     </section>
 
     <div class="spacer layer1"></div>
+  
+    <div class="spacer layer2 flip"></div>
+    <section class="orange">
+        <h1>Let me tell you something about me</h1>
+        <p>
+            Est voluptate modi temporibus excepturi debitis ab consequuntur, laborum maxime, necessitatibus culpa odit
+            vel sed amet animi obcaecati aliquam quisquam, laudantium perferendis enim! Ea architecto, atque soluta
+            animi mollitia dolorum!
+        </p>
+
+        <svg id="visual" viewBox="0 0 960 300" width="960" height="300" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g transform="translate(475.73083640958157 140.58711942918427)">
+                <path id="blob1"
+                    d="M86.8 -84.7C107.7 -66 116.3 -33 117.5 1.2C118.7 35.4 112.4 70.7 91.5 93.4C70.7 116 35.4 126 4.7 121.3C-25.9 116.6 -51.9 97.2 -73.5 74.5C-95.2 51.9 -112.6 25.9 -108.5 4.1C-104.3 -17.7 -78.7 -35.4 -57 -54C-35.4 -72.7 -17.7 -92.3 7.7 -100C33 -107.7 66 -103.3 86.8 -84.7"
+                    fill="#f14343"></path>
+            </g>
+            <g transform="translate(488.29702333970744 165.01919668889215)" style="visibility: hidden">
+                <path id="blob2"
+                    d="M81.4 -82.2C103.4 -59.4 117.7 -29.7 111.7 -6C105.7 17.7 79.4 35.4 57.4 49.5C35.4 63.7 17.7 74.3 -8.8 83.2C-35.4 92 -70.7 99 -94.5 84.9C-118.4 70.7 -130.7 35.4 -129.6 1.1C-128.6 -33.2 -114.1 -66.5 -90.3 -89.3C-66.5 -112.1 -33.2 -124.6 -1.8 -122.8C29.7 -121 59.4 -105.1 81.4 -82.2"
+                    fill="#f14343"></path>
+            </g>
+        </svg>
+
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3000, yoyo: true }
+            )
+            tween.start()
+        </script>
+    </section>
+    <div class="spacer layer2"></div>
 
     <section class="bubble">
         <h1>Let me tell you something about me</h1>
@@ -191,57 +225,13 @@
             quisquam, tenetur neque quas repudiandae placeat asperiores deserunt a sit aperiam similique! Unde, amet?
         </p>
     </section>
+
     <section>
         <h1>Let me tell you something about me</h1>
         <p>Sunt enim optio vel assumenda minima ex dolorum natus impedit voluptatibus nisi repudiandae sed accusamus
             reprehenderit nostrum a dicta officia, et, numquam quas aliquid incidunt provident! Quos laboriosam esse
             saepe.</p>
     </section>
-
-    <div class="spacer layer2 flip"></div>
-    <section class="pink">
-        <h1>Let me tell you something about me</h1>
-        <p>
-            Est voluptate modi temporibus excepturi debitis ab consequuntur, laborum maxime, necessitatibus culpa odit
-            vel sed amet animi obcaecati aliquam quisquam, laudantium perferendis enim! Ea architecto, atque soluta
-            animi mollitia dolorum!
-        </p>
-
-        <svg
-        id="visual" 
-        viewBox="0 0 960 300" 
-        width="960" 
-        height="300" 
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" 
-        version="1.1"
-        >
-            <g transform="translate(483.5814781559273 136.0007129132414)">
-                <path id="blob1"
-                    d="M83 -82.1C102.3 -63.6 109.2 -31.8 107 -2.1C104.9 27.6 93.8 55.2 74.5 80.2C55.2 105.2 27.6 127.6 -2 129.6C-31.6 131.6 -63.2 113.2 -85.2 88.2C-107.2 63.2 -119.6 31.6 -112.6 7C-105.7 -17.7 -79.4 -35.4 -57.4 -53.9C-35.4 -72.4 -17.7 -91.7 7.1 -98.7C31.8 -105.8 63.6 -100.6 83 -82.1"
-                    fill="#BB004B"
-                ></path>
-            </g>
-            <g transform="translate(484.6059888872047 160.90218094215734)" style="visibility: hidden">
-                <path id="blob2"
-                    d="M83.2 -90.2C95.7 -70.7 85.4 -35.4 80.1 -5.3C74.8 24.7 74.5 49.5 62 65C49.5 80.5 24.7 86.7 -1.4 88.2C-27.6 89.6 -55.2 86.2 -73.2 70.7C-91.2 55.2 -99.6 27.6 -98.2 1.4C-96.7 -24.7 -85.5 -49.5 -67.5 -69C-49.5 -88.5 -24.7 -102.7 5.3 -108.1C35.4 -113.4 70.7 -109.7 83.2 -90.2"
-                    fill="#BB004B">
-                </path>
-            </g>
-        </svg>
-
-        <script>
-            const tween = KUTE.fromTo(
-                '#blob1',
-                { path: '#blob1' },
-                { path: '#blob2' },
-                { repeat: 999, duration: 3000, yoyo: true }
-            )
-
-            tween.start()
-        </script>
-    </section>
-    <div class="spacer layer2"></div>
 </body>
 
 </html>
