@@ -1,193 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Devon's Portfolio</title>
+    <link rel="icon" href="./Images/portfolio.ico" sizes="any">
+    <link rel="stylesheet" href="./stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-
-    <script src="
-    https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
-    "></script>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Prompt', sans-serif;
-            color: #ffffff;
-            background: #252424;
-            background-color: #252424;
-            overflow-x: hidden;
-        }
-
-        section {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 400px;
-            padding: 100px 20vw;
-        }
-
-        svg {
-            background-color: #ffffff00;
-        }
-
-        div {
-            color: #252424;
-        }
-
-        .blue {
-            background: #3c31dd;
-        }
-
-        .red {
-            background: #dd3f31;
-        }
-
-        .orange {
-            background: #cd5f5f;
-        }
-
-        .dark {
-            background: #0f0f10;
-        }
-
-        .curve {
-            position: absolute;
-            height: 225px;
-            width: 100%;
-            bottom: 0;
-        }
-
-        .curve::before {
-            content: '';
-            display: block;
-            position: absolute;
-            border-radius: 100% 50%;
-            width: 55%;
-            height: 100%;
-            background-color: #252424;
-            transform: translate(85%, 60%);
-        }
-
-        .curve::after {
-            content: '';
-            display: block;
-            position: absolute;
-            border-radius: 100% 50%;
-            width: 55%;
-            height: 100%;
-            background-color: #3c31dd;
-            transform: translate(-4%, 40%);
-            z-index: -1;
-        }
-
-        .bubble::after {
-            content: '';
-            border-top-left-radius: 50% 100%;
-            border-top-right-radius: 50% 100%;
-            position: absolute;
-            bottom: 0;
-            height: 85%;
-            width: 100%;
-            background-color: #0f0f10;
-            z-index: -1;
-        }
-
-        .wave {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .wave svg {
-            position: relative;
-            display: block;
-            width: calc(131% + 1.3px);
-            height: 100px;
-            color: #252424;
-        }
-
-        .wave .shape-fill {
-            fill: #252424;
-        }
-
-        .spacer {
-            aspect-ratio: 960/300;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-        }
-
-        .layer1 {
-            background-image: url('./layer1.svg');
-            color: #252424;
-        }
-
-        .layer2 {
-            background-image: url('./layer2.svg');
-            color: #252424;
-        }
-
-        .layer3 {
-            background-image: url('./layer3.svg');
-            color: #252424;
-        }
-
-        .layer4 {
-            background-image: url('./layer4.svg');
-            color: #252424;
-        }
-
-        .layer5 {
-            background-image: url('./layer5.svg');
-            color: #252424;
-        }
-
-        .layer6 {
-            background-image: url('./layer6.svg');
-        }
-
-        .layer7 {
-            background-image: url('./layer7.svg');
-        }
-
-        .layer8 {
-            background-image: url('./layer8.svg');
-        }
-
-        .layer9 {
-            background-image: url('./layer9.svg');
-        }
-
-        .layer10 {
-            background-image: url('./layer10.svg');
-        }
-
-        .flip {
-            transform: rotate(180deg);
-        }
-
-        .blob-motion {
-            position: absolute;
-            transform: translateY(-20%);
-        }
-    </style>
-
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 </head>
-
+ 
 <body>
-
     <section class="blue">
         <div class="wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" color="#252424">
